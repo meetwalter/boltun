@@ -23,7 +23,8 @@ defmodule Boltun.TestListener do
 end
 
 defmodule BoltunTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: false
+
   import ConnHelper
 
   test "listens to notifications" do

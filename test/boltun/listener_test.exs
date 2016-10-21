@@ -1,5 +1,6 @@
 defmodule Boltun.ListenerTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: false
+
   import ConnHelper
 
   test "add callbacks" do
